@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>Page Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <script src="../Scripts/assignment2.js"></script>
+    <script src="../Scripts/tech.js"></script>
+    <script src="../Scripts/ajax.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body id="body" onload="loaded();">
     <table class="table table-hover">
@@ -22,25 +25,19 @@
             <td>Name</td><td><input id="pName" type="text"></td>
         </tr>
         <tr>
-            <td>GPA</td><td><input id="pGpa" type="number"></td>
-        </tr>
-        <tr>
-            <td>SAT</td><td><input id="pSat" type="number"></td>
-        </tr>
-        <tr>
-        <td>Year</td>
+        <td>Difficulty</td>
         <td>
-        <select id="pYear">
+        <select id="pDifficulty">
             <!-- <option disabled selected>Select</option> -->
-            <option id="FR">Freshman</option>
-            <option id="SO">Sophomore</option>
-            <option id="JR">Junior</option>
-            <option id="SR">Senior</option>
+            <option id="pEasy">Easy</option>
+            <option id="pMed">Medium</option>
+            <option id="pHard">Hard</option>
         </select>
         </td>
         </tr>
     </table>
 </div>
     <button class="btn btn-primary" onclick="add();">Add</button>
+    <button class="btn btn-primary" onclick="remove();">Remove</button>
 </body>
 </html>

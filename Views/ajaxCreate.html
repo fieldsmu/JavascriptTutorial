@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="../Scripts/ajaxCreate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <table class="table table-hover">
+        <thead class="thead-dark" id="thead"></thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <table class="table table-hover">
+        <tr>
+            <th>Id</th><td><input type="number" id="pId"></td>
+        </tr>
+        <tr>
+            <th>Description</th><td><input type="string" id="pDesc"></td>
+        </tr>
+        <tr>
+            <th>MinSAT</th><td><input type="number" id="pSat"></td>
+        </tr>
+    </table>
+    <button class="btn btn-primary" onclick="create();">Create</button>
+</body>
+</html>
